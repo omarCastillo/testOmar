@@ -1,0 +1,68 @@
+/*====Modo de uso
+	@include font-size($fontMenu);
+=================*/
+#quienesSomos {
+  background-color: #00b5fe;
+  color: #fff;
+  padding: 100px 0;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+#misionVision {
+  padding: 100px 0;
+}
+
+#misionVision .containerInfo {
+  border: 1px solid #afb0b2;
+  height: 200px;
+}
+
+#equipo {
+  padding: 100px 0;
+}
+
+#equipo h2 {
+  color: #00b5fe;
+  margin: 20px 0;
+}
+
+#contacto {
+  padding: 100px;
+}
+
+#contacto h2 {
+  color: #00b5fe;
+}
+
+#contacto input, #contacto textarea {
+  border: 1px solid #afb0b2;
+  border-radius: 0px;
+}
+
+footer {
+  background-color: #00b5fe;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer .logo {
+  text-align: left;
+}
+
+footer .texto {
+  text-align: center;
+}
+
+footer .socialNetwork {
+  text-align: right;
+}
+
+footer svg {
+  margin: 0 5px;
+}
+/*# sourceMappingURL=style.css.map */

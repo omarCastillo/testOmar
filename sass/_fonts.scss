@@ -1,0 +1,34 @@
+$fontMenu: (
+  null  : 15px,
+  576px : 15px,
+  768px : 13px,
+  992px : 12px,
+  1024px: 12px
+);
+
+$fontTitle: (
+  null  : 45px,
+  576px : 75px,
+  768px : 90px,
+  992px : 95px,
+  1024px: 100px,
+);
+
+
+
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+
+/*====Modo de uso
+	@include font-size($fontMenu);
+=================*/

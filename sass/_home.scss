@@ -1,0 +1,55 @@
+#quienesSomos{
+    background-color: $azul;
+    color: $blanco;
+    padding: 100px 0;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+#misionVision{
+    padding: 100px 0;
+    .containerInfo{
+        border: 1px solid $gris;
+        height: 200px;
+    }
+}
+
+#equipo{
+    padding: 100px 0;
+    h2{
+        color: $azul;
+        margin: 20px 0;
+    }
+}
+
+#contacto{
+    padding: 100px;
+    h2{
+        color: $azul;
+    }
+    input, textarea{
+        border: 1px solid $gris;
+        border-radius: 0px;
+    }
+}
+
+footer{
+    background-color: $azul;
+    color: $blanco;
+    padding: 20px 0;
+    a{
+        color: $blanco;
+    }
+    .logo{
+        text-align: left;
+    }
+    .texto{
+        text-align: center;
+    }
+    .socialNetwork{
+        text-align: right;
+    }
+    svg{
+        margin: 0 5px;
+    }
+}
