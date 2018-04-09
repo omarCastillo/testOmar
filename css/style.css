@@ -19,7 +19,7 @@ header .active {
 }
 
 header .navbar img {
-  width: 200px;
+  width: 350px;
   /*===============*/
   /*==============*/
   /*===Modo de uso===
@@ -29,7 +29,7 @@ header .navbar img {
 
 @media (max-width: 767px) {
   header .navbar img {
-    width: 100px;
+    width: 150px;
   }
 }
 
@@ -74,7 +74,7 @@ header .navbar img {
 #quienesSomos {
   background-color: #00b5fe;
   color: #fff;
-  padding: 100px 0 50px 0;
+  padding: 170px 0 50px 0;
   margin: 10px 0;
   line-height: 1.2;
   letter-spacing: 1px;
@@ -95,7 +95,7 @@ header .navbar img {
   position: absolute;
   width: 50%;
   left: 25%;
-  top: -150px;
+  top: -240px;
   /*===============*/
   /*==============*/
   /*===Modo de uso===
@@ -109,6 +109,11 @@ header .navbar img {
     left: 20%;
     top: -100px;
   }
+}
+
+#quienesSomos .imagoipoQuienes {
+  width: 60px;
+  padding: 10px 0 0 0;
 }
 
 #quienesSomos .infoQuienes {
@@ -259,6 +264,7 @@ footer .logo {
 }
 
 footer .logo img {
+  width: 60px;
   /*===============*/
   /*==============*/
   /*===Modo de uso===
