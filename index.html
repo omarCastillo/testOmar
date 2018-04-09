@@ -4,15 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Defensoría animal</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="http://via.placeholder.com/350x150" class="img-fluid"></a>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">CONÓCENOS<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">NUESTRO TRABAJO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">¿COMO AYUDAR?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACTO</a>
+                </li>
+                </ul>
+                <span class="navbar-text">
+                    <p><i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i></p>
+                </span>
+            </div>
+        </nav>
+    </header>
+    <section id="slider">
+        <div class="slide slide1">
+            <div class="imagen">
+                <img src="http://via.placeholder.com/350" alt="">
+                <div class="titulo">
+                    <p>¡TÚ TAMBIÉN PUEDES
+                        <span>CAMBIAR SU HISTORIA!</span></p>
+                    <button>DONA AHORA</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide2">
+            <div class="imagen">
+                <img src="http://via.placeholder.com/350" alt="">
+                <div class="titulo">
+                    <p>¡TÚ TAMBIÉN PUEDES
+                        <span>CAMBIAR SU HISTORIA!</span></p>
+                    <button>DONA AHORA</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide3">
+            <div class="imagen">
+                <img src="http://via.placeholder.com/350" alt="">
+                <div class="titulo">
+                    <p>¡TÚ TAMBIÉN PUEDES
+                        <span>CAMBIAR SU HISTORIA!</span></p>
+                    <button>DONA AHORA</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="quienesSomos">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 offset-md-2 text-center">
+                <div class="col-md-8 offset-md-2 text-center infoQuienes">
                     <img src="http://via.placeholder.com/350x150" alt="">
                     <h2>QUIÉNES SOMOS</h2>
                     <p>Somos una Asociación Civil cuya prioridad es generar educación, leyes y conciencia social, 
@@ -21,7 +85,7 @@
                     <p><strong>Buscamos ser un referente moral y ético en la lucha por un México donde los animales
                             sean respetados y cuidados.</strong></p>
                     <p>-Defensoría Animal</p>
-                    <img src="http://via.placeholder.com/150x150" alt="">
+                    <img src="http://via.placeholder.com/100x100" alt="">
                 </div> 
             </div>
         </div>
@@ -29,18 +93,23 @@
     <section id="misionVision">
         <div class="container text-center">
             <div class="row align-items-center">
-                <div class="col-md-5 offset-md-1 containerInfo">
-                    <h2>MISIÓN</h2>
-                    <p>Trabajar en la defensa y protección de la
-                            Biodiversidad animal en todas sus
-                            formas, con acciones a favor de los
-                            animales, su bienestar y el entorno
-                            que compartimos.</p>
+                <div class="col-md-4 offset-md-1 containerInfo">
+                    <div class="child">
+                        <h2>MISIÓN</h2>
+                        <p>Trabajar en la defensa y protección de la
+                                Biodiversidad animal en todas sus
+                                formas, con acciones a favor de los
+                                animales, su bienestar y el entorno
+                                que compartimos.</p>
+                    </div>
                 </div>
-                <div class="col-md-5 offset-md-1 containerInfo">
-                    <h2>VISIÓN</h2>
-                    <p>Un mundo donde todos los seres vivos
-                        sean valorados, respetados y protegidos.</p>
+                <div class="col-md-4 offset-md-2 containerInfo">
+                    <img src="http://via.placeholder.com/100x100" alt="">
+                    <div class="child">
+                        <h2>VISIÓN</h2>
+                        <p>Un mundo donde todos los seres vivos
+                            sean valorados, respetados y protegidos.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,7 +117,7 @@
     <section id="equipo">
         <div class="container text-center">
             <div class="row">
-                <div class="col-md-3 offset-md-1">
+                <div class="col-md-4 infoEquipo">
                     <img src="http://via.placeholder.com/150x150" class="img-fluid">
                     <h2>EMMANUEL</h2>
                     <p>Profesión: <strong>“Animalero de corazón”</strong> y
@@ -66,7 +135,7 @@
                             
                            <p><a href="">emmanuel@defensoriaanimal.org</a></p>
                 </div>
-                <div class="col-md-3 offset-md-1">
+                <div class="col-md-4 infoEquipo">
                     <img src="http://via.placeholder.com/150x150" class="img-fluid">
                     <h2>MELISSA</h2>
                     <p>Psicóloga por profesión, activista por
@@ -88,7 +157,7 @@
                             
                             <p><a href="">melissa@defensoriaanimal.org</a></p>
                 </div>
-                <div class="col-md-3 offset-md-1">
+                <div class="col-md-4 infoEquipo">
                     <img src="http://via.placeholder.com/150x150" class="img-fluid">
                     <h2>VERÓNICA</h2>
                     <p>Profesión: Ejecutante en Danza
@@ -160,5 +229,18 @@
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $('#slider').slick({
+            arrows: true,
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 1500
+        });
+    </script>
 </body>
 </html>
