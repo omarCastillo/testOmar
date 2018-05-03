@@ -1,0 +1,116 @@
+#queHacemos{
+    background-color: $azul;
+    color: $blanco;
+    padding: 80px;
+    .queHacemosText{
+        padding: 50px;
+    }
+    .gridcontainer{
+        padding: 50px;
+        .grid{
+            border: 1px solid $blanco;
+            padding: 15px;
+        }
+    }
+    .textPuntos{
+        letter-spacing: 1px;
+    }
+}
+
+.ayudar{
+    padding: 20px 0;
+}
+
+.botnes{
+    padding: 10px 0 40px 0;
+    span{
+        border-radius: 20px;
+        background: $azul;
+        color: $blanco;
+        padding: 5px 10px;
+    }
+}
+
+#aliados{
+    padding: 80px;
+    h2{
+        padding-bottom: 35px;
+    }
+}
+
+#logros{
+    background-color: #f3f3f3;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h2{
+        padding-top: 40px;
+    }
+    .containerInfoLogros{
+        background-color: $blanco;
+        margin: 10px 0;
+        padding:  10px 10px;
+    }
+}
+
+
+#frace{
+    padding: 80px;
+}
+
+#frace2{
+    padding: 80px;
+}
+
+.project{
+    position: absolute;
+    background: $blanco;
+    width: 40% !important;
+    max-width: unset;
+    z-index: 2;
+    padding: 10px;
+}
+
+.proyectoContain {
+    padding: 25px 0;
+}
+
+.casoContain{
+    padding: 25px 15px;;
+}
+
+.infoCaso {
+    background-color: #fff;
+    height: 260px;
+    padding: 20px;
+}
+
+.caso1{
+    background-image: url('http://via.placeholder.com/400');
+    @extend .backgroundComplement;
+    height: 200px;
+}
+.caso2{
+    background-image: url('http://via.placeholder.com/400');
+    @extend .backgroundComplement;
+    height: 200px;
+}
+.caso3{
+    background-image: url('http://via.placeholder.com/400');
+    @extend .backgroundComplement;
+    height: 200px;
+}
+.caso4{
+    background-image: url('http://via.placeholder.com/400');
+    @extend .backgroundComplement;
+    height: 200px;
+}
+.caso5{
+    background-image: url('http://via.placeholder.com/400');
+    @extend .backgroundComplement;
+    height: 200px;
+}
+.caso6{
+    background-image: url('http://via.placeholder.com/400');
+    @extend .backgroundComplement;
+    height: 200px;
+}
