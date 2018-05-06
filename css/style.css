@@ -4,7 +4,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-.backgroundComplement, .caso1, .caso2, .caso3, .caso4, .caso5, .caso6 {
+.backgroundComplement, .caso1, .caso2, .caso3, .caso4, .caso5, .caso6, .apoyoImportante .foto1, .apoyoImportante .foto2, .apoyoImportante .foto3, .apoyoImportante .foto4, .apoyoImportante .foto5, .apoyoImportante .foto6 {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -248,6 +248,7 @@ header .navbar img {
 
 #contacto h2 {
   color: #00b5fe;
+  font-weight: bold;
 }
 
 #contacto input, #contacto textarea {
@@ -313,6 +314,7 @@ footer svg {
   background-color: #00b5fe;
   color: #fff;
   padding: 80px;
+  position: relative;
 }
 
 #queHacemos .queHacemosText {
@@ -326,10 +328,36 @@ footer svg {
 #queHacemos .gridcontainer .grid {
   border: 1px solid #fff;
   padding: 15px;
+  margin: 0 10px 0 10px;
+  display: table;
+  height: 300px;
+}
+
+#queHacemos .gridcontainer .grid .child {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #queHacemos .textPuntos {
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+}
+
+#queHacemos .textPuntos .dot {
+  margin-right: 13px;
+}
+
+#queHacemos .imagoipoTrabajo {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  padding: 50px 0 0 0;
+}
+
+#queHacemos .ave {
+  width: 200px;
+  position: absolute;
+  top: -50px;
+  left: 50px;
 }
 
 .ayudar {
@@ -349,6 +377,7 @@ footer svg {
 
 #aliados {
   padding: 80px;
+  color: #afb0b2;
 }
 
 #aliados h2 {
@@ -356,27 +385,44 @@ footer svg {
 }
 
 #logros {
-  background-color: #f3f3f3;
+  background-color: #f6f6f6;
   padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 #logros h2 {
-  padding-top: 40px;
+  padding: 50px 0 50px 0;
+  color: #afb0b2;
 }
 
 #logros .containerInfoLogros {
   background-color: #fff;
   margin: 10px 0;
-  padding: 10px 10px;
+  padding: 20px 30px;
+  font-weight: 500;
+}
+
+#logros .perroLogros {
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
 #frace {
   padding: 80px;
 }
 
+#frace span {
+  color: #00b5fe;
+  font-weight: bold;
+}
+
 #frace2 {
   padding: 80px;
+}
+
+#frace2 span {
+  color: #00b5fe;
+  font-weight: bold;
 }
 
 .project {
@@ -385,7 +431,8 @@ footer svg {
   width: 40% !important;
   max-width: unset;
   z-index: 2;
-  padding: 10px;
+  padding: 20px 20px 20px 20px;
+  border-left: 5px solid #00b5fe;
 }
 
 .proyectoContain {
@@ -400,6 +447,7 @@ footer svg {
   background-color: #fff;
   height: 260px;
   padding: 20px;
+  font-weight: 500;
 }
 
 .caso1 {
@@ -430,5 +478,131 @@ footer svg {
 .caso6 {
   background-image: url("http://via.placeholder.com/400");
   height: 200px;
+}
+
+.btnMasInfo {
+  background-color: #00b5fe;
+  color: #fff;
+}
+
+.btnMasInfo p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.apoyoImportante {
+  background-color: #fff;
+}
+
+.apoyoImportante h2 {
+  font-size: 30px;
+  padding: 50px 0 10px 0;
+}
+
+.apoyoImportante h3 {
+  padding: 10px 0 50px 0;
+  color: #00b5fe;
+  font-weight: bold;
+}
+
+.apoyoImportante label {
+  background: red;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 17px;
+  margin: 20px 0 20px 0;
+  text-align: left;
+}
+
+.apoyoImportante .foto1 {
+  background-image: url("http://via.placeholder.com/300x300");
+  height: 400px;
+}
+
+.apoyoImportante .foto2 {
+  background-image: url("http://via.placeholder.com/300x300");
+  height: 200px;
+}
+
+.apoyoImportante .foto3 {
+  background-image: url("http://via.placeholder.com/300x300");
+  height: 200px;
+}
+
+.apoyoImportante .foto4 {
+  background-image: url("http://via.placeholder.com/300x300");
+  height: 200px;
+}
+
+.apoyoImportante .foto5 {
+  background-image: url("http://via.placeholder.com/300x300");
+  height: 200px;
+}
+
+.apoyoImportante .foto6 {
+  background-image: url("http://via.placeholder.com/300x300");
+  height: 200px;
+}
+
+.apoyoImportante .foto1,
+.apoyoImportante .foto2,
+.apoyoImportante .foto3,
+.apoyoImportante .foto4,
+.apoyoImportante .foto5,
+.apoyoImportante .foto6 {
+  border: 5px solid #fff;
+}
+
+.containerInfoAdopta {
+  padding: 30px;
+  background-color: #f6f6f6;
+}
+
+.despliegaPregunta {
+  font-weight: bold;
+}
+
+.despliegaPregunta span {
+  color: #00b5fe;
+  margin-left: 10px;
+}
+
+.containerForm {
+  background: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.containerForm h2, .containerForm h3 {
+  color: #00b5fe;
+  padding: 20px 0 20px 0;
+  font-weight: bold;
+}
+
+.containerForm h4 {
+  padding: 40px 0 10px 0;
+}
+
+.containerForm .formPart1 input {
+  width: 30%;
+  margin: 5px 5px 5px 5px;
+}
+
+.containerForm .formPart2 input {
+  width: 90%;
+  margin: 5px 5px 5px 5px;
+}
+
+.containerForm .formPart2 button {
+  background-color: #00b5fe;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.rowContainerForm {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 /*# sourceMappingURL=style.css.map */

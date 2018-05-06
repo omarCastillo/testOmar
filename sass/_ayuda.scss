@@ -1,0 +1,116 @@
+.apoyoImportante{
+    background-color: $blanco;
+
+    h2{
+        font-size: 30px;
+        padding: 50px 0 10px 0;
+    }
+    h3{
+        padding: 10px 0 50px 0;
+        color: $azul;
+        font-weight: bold;
+    }
+
+    label{
+        background: red;
+        color: $blanco;
+        padding: 7px 10px;
+        border-radius: 17px;
+        margin: 20px 0 20px 0;
+        text-align: left;
+    }
+
+    .foto1{
+        background-image: url('http://via.placeholder.com/300x300');
+        @extend .backgroundComplement;
+        height: 400px;        
+    }
+
+    .foto2{
+        background-image: url('http://via.placeholder.com/300x300');
+        @extend .backgroundComplement;
+        height: 200px;        
+    }
+
+    .foto3{
+        background-image: url('http://via.placeholder.com/300x300');
+        @extend .backgroundComplement;
+        height: 200px;        
+    }
+
+    .foto4{
+        background-image: url('http://via.placeholder.com/300x300');
+        @extend .backgroundComplement;
+        height: 200px;        
+    }
+
+    .foto5{
+        background-image: url('http://via.placeholder.com/300x300');
+        @extend .backgroundComplement;
+        height: 200px;        
+    }
+    .foto6{
+        background-image: url('http://via.placeholder.com/300x300');
+        @extend .backgroundComplement;
+        height: 200px;        
+    }
+    .foto1,
+    .foto2,
+    .foto3,
+    .foto4,
+    .foto5,
+    .foto6{
+        border: 5px solid $blanco;
+    }
+}
+
+.containerInfoAdopta{
+    padding: 30px;
+    background-color: #f6f6f6;
+}
+
+.despliegaPregunta{
+    font-weight: bold;
+    span{
+        color: $azul;
+        margin-left: 10px;
+    }
+}
+
+.containerForm{
+    background: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h2, h3{
+        color: $azul;
+        padding: 20px 0 20px 0;
+        font-weight: bold;
+    }
+    h4{
+        padding: 40px 0 10px 0;
+    }
+    .formPart1{
+        input{
+            width: 30%;
+            margin: 5px 5px 5px 5px;
+        }
+    }
+    .formPart2{
+        input{
+            width: 90%;
+            margin: 5px 5px 5px 5px;
+        }
+        button{
+            background-color: $azul;
+            color: $blanco;
+            border: none;
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+    }
+}
+
+.rowContainerForm{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
