@@ -1,7 +1,12 @@
+/*====Modo de uso
+	@include font-size($fontMenu);
+=================*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i");
 body {
   overflow-x: hidden;
   font-family: 'Raleway', sans-serif;
+  padding-top: 152px;
+  color: #7e7e7e;
 }
 
 .backgroundComplement, .caso1, .caso2, .caso3, .caso4, .caso5, .caso6, .apoyoImportante .foto1, .apoyoImportante .foto2, .apoyoImportante .foto3, .apoyoImportante .foto4, .apoyoImportante .foto5, .apoyoImportante .foto6 {
@@ -10,13 +15,62 @@ body {
   background-repeat: no-repeat;
 }
 
-/*====Modo de uso
-	@include font-size($fontMenu);
-=================*/
-header .fa-w-14, header .fa-w-16 {
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  top: 0;
+}
+
+/*===============*/
+/*==============*/
+@media (min-width: 992px) {
+  .navbar-nav {
+    margin-right: 0 !important;
+    position: absolute;
+    top: 25px;
+    right: 0;
+  }
+}
+
+/*===Modo de uso===
+	@include breakpoint(md-max) {}
+  ==================*/
+.bg-faded {
+  background-color: #ffffff;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.transition, #misionVision .containerInfo:nth-child(1), #misionVision .containerInfo:nth-child(2), #queHacemos .gridcontainer .grid, #logros .btnInfo {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.azulGradiente, #quienesSomos, #misionVision .containerInfo:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a8fe+0,00bafe+100 */
+  background: #00a8fe;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #00a8fe 0%, #00bafe 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a8fe', endColorstr='#00bafe',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+header .fa-w-14,
+header .fa-w-16 {
   color: #00b5fe;
   padding: 0 5px;
   font-size: 25px;
+  margin: 7px 5px 0px 5px;
 }
 
 header .active {
@@ -25,7 +79,7 @@ header .active {
 }
 
 header .navbar img {
-  width: 350px;
+  width: 300px;
   /*===============*/
   /*==============*/
   /*===Modo de uso===
@@ -37,6 +91,11 @@ header .navbar img {
   header .navbar img {
     width: 150px;
   }
+}
+
+header .nav-item {
+  font-size: 15px;
+  margin: 10px 10px 10px 10px;
 }
 
 #slider .slide {
@@ -51,8 +110,9 @@ header .navbar img {
 
 #slider .slide .imagen img {
   position: absolute;
-  top: 75px;
+  top: 0;
   left: 20%;
+  width: 40%;
 }
 
 #slider .slide .titulo {
@@ -73,12 +133,11 @@ header .navbar img {
   color: #fff;
   padding: 8px 25px;
   border: 0;
-  border-radius: 15px;
+  border-radius: 5px;
   letter-spacing: 1px;
 }
 
 #quienesSomos {
-  background-color: #00b5fe;
   color: #fff;
   padding: 170px 0 50px 0;
   margin: 10px 0;
@@ -174,9 +233,11 @@ header .navbar img {
 }
 
 #misionVision .containerInfo:nth-child(2) {
-  background-color: #00b5fe;
-  color: #fff;
   position: relative;
+}
+
+#misionVision .containerInfo:nth-child(2) h2 {
+  color: #00b5fe;
 }
 
 #misionVision .containerInfo:nth-child(2) img {
@@ -196,6 +257,14 @@ header .navbar img {
     right: -10px;
     width: 70px;
   }
+}
+
+#misionVision .containerInfo:hover {
+  color: #fff;
+}
+
+#misionVision .containerInfo:hover h2 {
+  color: #fff;
 }
 
 #equipo {
@@ -251,7 +320,8 @@ header .navbar img {
   font-weight: bold;
 }
 
-#contacto input, #contacto textarea {
+#contacto input,
+#contacto textarea {
   border: 1px solid #afb0b2;
   border-radius: 0px;
 }
@@ -310,19 +380,59 @@ footer svg {
   margin: 0 5px;
 }
 
+.formularioContacto {
+  position: relative;
+}
+
+.formularioContacto img {
+  position: absolute;
+  width: 400px;
+  bottom: -50px;
+  right: -300px;
+}
+
 #queHacemos {
-  background-color: #00b5fe;
+  background-image: url("../img/backgroundQuehacemos.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
   padding: 80px;
   position: relative;
+  /*===============*/
+  /*==============*/
+  /*===Modo de uso===
+	@include breakpoint(md-max) {}
+  ==================*/
+}
+
+@media (max-width: 767px) {
+  #queHacemos {
+    padding: 0;
+  }
 }
 
 #queHacemos .queHacemosText {
   padding: 50px;
 }
 
+#queHacemos .queHacemosText h2 {
+  padding-bottom: 30px;
+}
+
 #queHacemos .gridcontainer {
   padding: 50px;
+  /*===============*/
+  /*==============*/
+  /*===Modo de uso===
+	@include breakpoint(md-max) {}
+  ==================*/
+}
+
+@media (max-width: 767px) {
+  #queHacemos .gridcontainer {
+    padding: 0;
+  }
 }
 
 #queHacemos .gridcontainer .grid {
@@ -331,6 +441,17 @@ footer svg {
   margin: 0 10px 0 10px;
   display: table;
   height: 300px;
+  /*===============*/
+  /*==============*/
+  /*===Modo de uso===
+	@include breakpoint(md-max) {}
+  ==================*/
+}
+
+@media (max-width: 767px) {
+  #queHacemos .gridcontainer .grid {
+    margin: 20px 10px;
+  }
 }
 
 #queHacemos .gridcontainer .grid .child {
@@ -338,12 +459,27 @@ footer svg {
   vertical-align: middle;
 }
 
+#queHacemos .gridcontainer .grid:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 #queHacemos .textPuntos {
   letter-spacing: 1.5px;
+  /*===============*/
+  /*==============*/
+  /*===Modo de uso===
+	@include breakpoint(md-max) {}
+  ==================*/
 }
 
 #queHacemos .textPuntos .dot {
   margin-right: 13px;
+}
+
+@media (min-width: 768px) {
+  #queHacemos .textPuntos {
+    padding: 0 60px;
+  }
 }
 
 #queHacemos .imagoipoTrabajo {
@@ -354,10 +490,16 @@ footer svg {
 }
 
 #queHacemos .ave {
-  width: 200px;
+  width: 150px;
   position: absolute;
   top: -50px;
   left: 50px;
+}
+
+@media (max-width: 767px) {
+  #queHacemos .ave {
+    display: none;
+  }
 }
 
 .ayudar {
@@ -369,23 +511,53 @@ footer svg {
 }
 
 .botnes span {
-  border-radius: 20px;
+  border-radius: 5px;
   background: #00b5fe;
   color: #fff;
   padding: 5px 10px;
 }
 
+.botnes div {
+  /*===============*/
+  /*==============*/
+  /*===Modo de uso===
+	@include breakpoint(md-max) {}
+  ==================*/
+}
+
+@media (max-width: 767px) {
+  .botnes div {
+    margin: 10px 0;
+  }
+}
+
 #aliados {
   padding: 80px;
   color: #afb0b2;
+  /*===============*/
+  /*==============*/
+  /*===Modo de uso===
+	@include breakpoint(md-max) {}
+  ==================*/
+}
+
+@media (max-width: 767px) {
+  #aliados {
+    padding: 20px;
+  }
 }
 
 #aliados h2 {
   padding-bottom: 35px;
 }
 
-#logros {
+.rowLogros {
   background-color: #f6f6f6;
+  padding: 50px;
+}
+
+#logros {
+  background-color: #fff;
   padding-top: 80px;
 }
 
@@ -407,8 +579,44 @@ footer svg {
   padding-top: 50px;
 }
 
+#logros .btnMasInfo1,
+#logros .btnMasInfo2,
+#logros .btnMasInfo3,
+#logros .btnMasInfo4,
+#logros .btnMasInfo5,
+#logros .btnMasInfo6,
+#logros .btnMasInfo7 {
+  display: none;
+}
+
+#logros .info1:hover .btnMasInfo1,
+#logros .info2:hover .btnMasInfo2,
+#logros .info3:hover .btnMasInfo3,
+#logros .info4:hover .btnMasInfo4,
+#logros .info5:hover .btnMasInfo5,
+#logros .info6:hover .btnMasInfo6,
+#logros .info7:hover .btnMasInfo7 {
+  display: block;
+}
+
+#logros .btnInfo {
+  background: #00b5fe;
+  color: #fff;
+  padding: 2px 0;
+  cursor: pointer;
+}
+
+#logros .btnInfo p {
+  margin: 0;
+}
+
 #frace {
   padding: 80px;
+  /*===============*/
+  /*==============*/
+  /*===Modo de uso===
+	@include breakpoint(md-max) {}
+  ==================*/
 }
 
 #frace span {
@@ -416,13 +624,45 @@ footer svg {
   font-weight: bold;
 }
 
+@media (max-width: 767px) {
+  #frace {
+    padding: 20px;
+  }
+}
+
 #frace2 {
   padding: 80px;
+  /*===============*/
+  /*==============*/
+  /*===Modo de uso===
+	@include breakpoint(md-max) {}
+  ==================*/
+}
+
+@media (max-width: 767px) {
+  #frace2 {
+    padding: 20px;
+  }
 }
 
 #frace2 span {
   color: #00b5fe;
   font-weight: bold;
+}
+
+#frace2 img {
+  /*===============*/
+  /*==============*/
+  /*===Modo de uso===
+	@include breakpoint(md-max) {}
+  ==================*/
+}
+
+@media (max-width: 767px) {
+  #frace2 img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .project {
@@ -433,10 +673,38 @@ footer svg {
   z-index: 2;
   padding: 20px 20px 20px 20px;
   border-left: 5px solid #00b5fe;
+  /*===============*/
+  /*==============*/
+  /*===Modo de uso===
+	@include breakpoint(md-max) {}
+  ==================*/
+}
+
+@media (max-width: 767px) {
+  .project {
+    position: relative;
+    width: 100% !important;
+    margin-bottom: 50px;
+  }
 }
 
 .proyectoContain {
   padding: 25px 0;
+}
+
+.proyectoContain img {
+  /*===============*/
+  /*==============*/
+  /*===Modo de uso===
+	@include breakpoint(md-max) {}
+  ==================*/
+}
+
+@media (max-width: 767px) {
+  .proyectoContain img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .casoContain {
@@ -448,6 +716,17 @@ footer svg {
   height: 260px;
   padding: 20px;
   font-weight: 500;
+  /*===============*/
+  /*==============*/
+  /*===Modo de uso===
+	@include breakpoint(md-max) {}
+  ==================*/
+}
+
+@media (max-width: 767px) {
+  .infoCaso {
+    height: auto;
+  }
 }
 
 .caso1 {
@@ -490,6 +769,20 @@ footer svg {
   padding: 10px 0;
 }
 
+#logosAliados img {
+  /*===============*/
+  /*==============*/
+  /*===Modo de uso===
+	@include breakpoint(md-max) {}
+  ==================*/
+}
+
+@media (max-width: 767px) {
+  #logosAliados img {
+    margin: 10px 0;
+  }
+}
+
 .apoyoImportante {
   background-color: #fff;
 }
@@ -509,7 +802,7 @@ footer svg {
   background: red;
   color: #fff;
   padding: 7px 10px;
-  border-radius: 17px;
+  border-radius: 5px;
   margin: 20px 0 20px 0;
   text-align: left;
 }
@@ -555,6 +848,7 @@ footer svg {
 
 .containerInfoAdopta {
   padding: 30px;
+  padding-bottom: 200px;
   background-color: #f6f6f6;
 }
 
@@ -597,8 +891,19 @@ footer svg {
   background-color: #00b5fe;
   color: #fff;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 5px 10px;
+}
+
+#denuncia {
+  position: relative;
+}
+
+#denuncia img {
+  position: absolute;
+  width: 500px;
+  bottom: -200px;
+  right: 0;
 }
 
 .rowContainerForm {

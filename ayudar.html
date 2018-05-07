@@ -13,35 +13,54 @@
 <body>
     <header>
         <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid"></a>
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" class="img-fluid">
+            </a>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONÓCENOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="trabajo.html">NUESTRO TRABAJO</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="ayudar.html">¿COMO AYUDAR?<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">BLOG</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">CONTACTO</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">CONÓCENOS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">NUESTRO TRABAJO</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="trabajo.html#queHacemos">¿QUE HACEMOS?</a>
+                          <a class="dropdown-item" href="trabajo.html#logros">NUESTRO LOGROS</a>
+                          <a class="dropdown-item" href="trabajo.html#proyectosActualues">PROYECTOS ACTUALES</a>
+                          <a class="dropdown-item" href="trabajo.html#aliados">ALIANZAS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">¿COMO AYUDAR?</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="ayudar.html#dona">DONA</a>
+                          <a class="dropdown-item" href="ayudar.html#adopta">ADOPTA</a>
+                          <a class="dropdown-item" href="ayudar.html#voluntariado">VOLUNTARIOS</a>
+                          <a class="dropdown-item" href="ayudar.html#denuncia">DENUNCIA</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                    </li>
+                    <span class="navbar-text">
+                        <p>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                        </p>
+                    </span>
                 </ul>
-                <span class="navbar-text">
-                    <p><i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i></p>
-                </span>
             </div>
         </nav>
     </header>
-    <section id="">
+    <section id="dona">
         <div class="container containerInfoAdopta">
             <div class="container">
                 <div class="row apoyoImportante">
@@ -71,7 +90,7 @@
                     </div>
                 </div>
 
-                <div class="row rowContainerForm">
+                <div id="adopta" class="row rowContainerForm">
                     <div class="container containerForm">
                         <div class="col-sm-12">
                             <h2>¡ADOPTA!</h2>
@@ -96,7 +115,7 @@
                     </div>
                 </div>
                 
-                <div class="row rowContainerForm">
+                <div id="voluntariado" class="row rowContainerForm">
                     <div class="container containerForm">
                         <div class="col-sm-12">
                             <h2>VOLUNTARIADO</h2>
@@ -145,7 +164,7 @@
                     </div>
                 </div>
 
-                <div class="row rowContainerForm">
+                <div id="denuncia" class="row rowContainerForm">
                     <div class="container containerForm">
                         <div class="row">
                             <div class="col-sm-12">
@@ -169,6 +188,7 @@
                             </div>
                         </div>
                     </div>
+                    <img src="img/caballosAyuda.png" alt="" srcset="">
                 </div>
             </div>
         </div>
@@ -176,13 +196,13 @@
     <section id="contacto">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h2>CONTACTO</h2>
                     <p>Teléfonos de Contacto:</p>
                     <p><a href="">045 (722) 380 6996</a></p>
                     <p><a href="">044 (55) 52 99 5387</a></p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 formularioContacto">
                     <h2>¡ESCRÍBENOS!</h2>
                     <form action="" method="post">
                             <div class="form-group">
@@ -198,6 +218,7 @@
                                 <textarea type="text" class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" rows="7"></textarea>
                             </div>
                     </form>
+                    <img src="img/gatoForm.png" alt="" srcset="">                    
                 </div>
             </div>
         </div>

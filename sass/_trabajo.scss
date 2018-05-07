@@ -1,29 +1,53 @@
 #queHacemos{
-    background-color: $azul;
+    //background-color: $azul;
+    background-image: url('../img/backgroundQuehacemos.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: $blanco;
     padding: 80px;
     position: relative;
+	@include breakpoint(md-max) {
+        padding: 0;
+    }
+    
     .queHacemosText{
         padding: 50px;
+        h2{
+            padding-bottom: 30px;
+        }
     }
     .gridcontainer{
         padding: 50px;
+        @include breakpoint(md-max) {
+            padding: 0;
+        }
         .grid{
             border: 1px solid $blanco;
             padding: 15px;
             margin: 0 10px 0 10px;
             display: table;
             height: 300px;
+            @extend .transition;
+            @include breakpoint(md-max) {
+                margin: 20px 10px;
+            }
             .child {
                 display: table-cell;
                 vertical-align: middle;
             }
+        }
+        .grid:hover{
+            background-color: rgba(255, 255, 255, 0.2);
         }
     }
     .textPuntos{
         letter-spacing: 1.5px;
         .dot{
             margin-right: 13px;
+        }
+        @include breakpoint(md-min){
+            padding: 0 60px;
         }
     }
     .imagoipoTrabajo{
@@ -33,10 +57,13 @@
         padding: 50px 0 0 0;
     }
     .ave{
-        width: 200px;
+        width: 150px;
         position: absolute;
         top: -50px;
         left: 50px;
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 }
 
@@ -47,23 +74,36 @@
 .botnes{
     padding: 10px 0 40px 0;
     span{
-        border-radius: 20px;
+        border-radius: 5px;
         background: $azul;
         color: $blanco;
         padding: 5px 10px;
+    }
+    div{
+        @include breakpoint(md-max) {
+            margin: 10px 0;
+        }
     }
 }
 
 #aliados{
     padding: 80px;
     color: $gris;
+    @include breakpoint(md-max) {
+        padding: 20px;
+    }
     h2{
         padding-bottom: 35px;
     }
 }
 
-#logros{
+.rowLogros{
     background-color: #f6f6f6;
+    padding: 50px;
+}
+
+#logros{
+    background-color: $blanco;
     padding-top: 80px;
     h2{
         padding: 50px 0 50px 0;
@@ -80,6 +120,34 @@
         margin: 0 auto;
         padding-top: 50px;
     }
+    .btnMasInfo1,
+    .btnMasInfo2,
+    .btnMasInfo3,
+    .btnMasInfo4,
+    .btnMasInfo5,
+    .btnMasInfo6,
+    .btnMasInfo7{
+        display: none;
+    }
+    .info1:hover .btnMasInfo1,
+    .info2:hover .btnMasInfo2,
+    .info3:hover .btnMasInfo3,
+    .info4:hover .btnMasInfo4,
+    .info5:hover .btnMasInfo5,
+    .info6:hover .btnMasInfo6,
+    .info7:hover .btnMasInfo7{
+        display: block;
+    } 
+    .btnInfo{
+        background: $azul;
+        color: #fff;
+        padding: 2px 0;
+        @extend .transition;
+        cursor: pointer;
+        p{
+            margin: 0;
+        }
+    }
 }
 
 
@@ -89,14 +157,26 @@
         color: $azul;
         font-weight: bold;
     }
+    @include breakpoint(md-max) {
+        padding: 20px;
+    }
 }
 
 #frace2{
     padding: 80px;
+    @include breakpoint(md-max) {
+        padding: 20px;
+    }
     span{
         color: $azul;
         font-weight: bold;
-    }    
+    }
+    img{
+        @include breakpoint(md-max) {
+            display: block;
+            margin: 0 auto;
+        }
+    }
 }
 
 .project{
@@ -107,10 +187,21 @@
     z-index: 2;
     padding: 20px 20px 20px 20px;
     border-left: 5px solid $azul;
+    @include breakpoint(md-max) {
+        position: relative;
+        width: 100% !important;
+        margin-bottom: 50px;
+    }
 }
 
 .proyectoContain {
     padding: 25px 0;
+    img{
+        @include breakpoint(md-max) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
 }
 
 .casoContain{
@@ -122,6 +213,9 @@
     height: 260px;
     padding: 20px;
     font-weight: 500;
+    @include breakpoint(md-max) {
+        height: auto;
+    }
 }
 
 .caso1{
@@ -161,5 +255,13 @@
     p{
         margin: 0;
         padding: 10px 0;
+    }
+}
+
+#logosAliados{
+    img{
+        @include breakpoint(md-max) {
+            margin: 10px 0;
+        }
     }
 }

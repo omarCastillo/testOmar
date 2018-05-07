@@ -2,10 +2,57 @@
 body{
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
+    padding-top: 152px;
+    color: $grisLetras;
 }
 
 .backgroundComplement{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    top: 0;
+}
+
+@include breakpoint(lg-min){
+    .navbar-nav{
+        margin-right: 0 !important;
+        position: absolute;
+        top: 25px;
+        right: 0;
+
+    }
+}
+
+.bg-faded {
+    background-color: #ffffff;
+}
+
+h2{
+    font-size: 26px;
+}
+
+p{
+    font-size: 14px;
+}
+
+.transition{
+    -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.azulGradiente{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a8fe+0,00bafe+100 */
+background: rgb(0,168,254); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(0,168,254,1) 0%, rgba(0,186,254,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(0,168,254,1) 0%,rgba(0,186,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(0,168,254,1) 0%,rgba(0,186,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a8fe', endColorstr='#00bafe',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }

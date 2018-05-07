@@ -13,58 +13,57 @@
 <body>
     <header>
         <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid"></a>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" class="img-fluid">
+            </a>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">CONÓCENOS<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="trabajo.html">NUESTRO TRABAJO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ayudar.html">¿COMO AYUDAR?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">BLOG</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">CONTACTO</a>
-                </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">CONÓCENOS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">NUESTRO TRABAJO</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="trabajo.html#queHacemos">¿QUE HACEMOS?</a>
+                          <a class="dropdown-item" href="trabajo.html#logros">NUESTRO LOGROS</a>
+                          <a class="dropdown-item" href="trabajo.html#proyectosActualues">PROYECTOS ACTUALES</a>
+                          <a class="dropdown-item" href="trabajo.html#aliados">ALIANZAS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">¿COMO AYUDAR?</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="ayudar.html#dona">DONA</a>
+                          <a class="dropdown-item" href="ayudar.html#adopta">ADOPTA</a>
+                          <a class="dropdown-item" href="ayudar.html#voluntariado">VOLUNTARIOS</a>
+                          <a class="dropdown-item" href="ayudar.html#denuncia">DENUNCIA</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                    </li>
+                    <span class="navbar-text">
+                        <p>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                        </p>
+                    </span>
                 </ul>
-                <span class="navbar-text">
-                    <p><i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i></p>
-                </span>
             </div>
         </nav>
     </header>
     <section id="slider">
         <div class="slide slide1">
             <div class="imagen">
-                <img src="http://via.placeholder.com/350" alt="">
-                <div class="titulo">
-                    <p>¡TÚ TAMBIÉN PUEDES
-                        <span>CAMBIAR SU HISTORIA!</span></p>
-                    <button>DONA AHORA</button>
-                </div>
-            </div>
-        </div>
-        <div class="slide slide2">
-            <div class="imagen">
-                <img src="http://via.placeholder.com/350" alt="">
-                <div class="titulo">
-                    <p>¡TÚ TAMBIÉN PUEDES
-                        <span>CAMBIAR SU HISTORIA!</span></p>
-                    <button>DONA AHORA</button>
-                </div>
-            </div>
-        </div>
-        <div class="slide slide3">
-            <div class="imagen">
-                <img src="http://via.placeholder.com/350" alt="">
+                <img src="img/perroSlide.png" alt="">
                 <div class="titulo">
                     <p>¡TÚ TAMBIÉN PUEDES
                         <span>CAMBIAR SU HISTORIA!</span></p>
@@ -157,7 +156,7 @@
                             
                             <p><a href="">melissa@defensoriaanimal.org</a></p>
                 </div>
-                <div class="col-md-6 offset-md-3 col-lg-4 infoEquipo">
+                <div class=" col-lg-4 infoEquipo">
                     <img src="http://via.placeholder.com/150x150" class="img-fluid">
                     <h2>VERÓNICA</h2>
                     <p>Profesión: Ejecutante en Danza
@@ -183,28 +182,29 @@
     <section id="contacto">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h2>CONTACTO</h2>
                     <p>Teléfonos de Contacto:</p>
                     <p><a href=""><i class="fas fa-phone"></i> 045 (722) 380 6996</a></p>
                     <p><a href=""><i class="fas fa-phone"></i> 044 (55) 52 99 5387</a></p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 formularioContacto">
                     <h2>¡ESCRÍBENOS!</h2>
                     <form action="" method="post">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="nombre" name="Nombre" placeholder="Nombre">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="number" class="form-control" id="numero" name="numero" placeholder="Numero">
-                            </div>
-                            <div class="form-group">
-                                <textarea type="text" class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" rows="7"></textarea>
-                            </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nombre" name="Nombre" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="numero" name="numero" placeholder="Numero">
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" rows="7"></textarea>
+                        </div>
                     </form>
+                    <img src="img/gatoForm.png" alt="" srcset="">
                 </div>
             </div>
         </div>
