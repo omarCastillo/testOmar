@@ -56,3 +56,11 @@ background: -webkit-linear-gradient(-45deg, rgba(0,168,254,1) 0%,rgba(0,186,254,
 background: linear-gradient(135deg, rgba(0,168,254,1) 0%,rgba(0,186,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a8fe', endColorstr='#00bafe',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+.dropdown-menu{
+    border: none;
+    a{
+        font-size: 12px;
+        color: #c9c9c9;
+    }
+}

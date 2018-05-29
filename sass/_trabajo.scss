@@ -100,6 +100,15 @@
 .rowLogros{
     background-color: #f6f6f6;
     padding: 50px;
+    padding-bottom: 0;
+}
+
+#frace2{
+    img{
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+    }
 }
 
 #logros{
@@ -119,6 +128,7 @@
         display: block;
         margin: 0 auto;
         padding-top: 50px;
+        width: 400px;
     }
     .btnMasInfo1,
     .btnMasInfo2,
@@ -186,12 +196,16 @@
     max-width: unset;
     z-index: 2;
     padding: 20px 20px 20px 20px;
-    border-left: 5px solid $azul;
+    @extend .transition;
     @include breakpoint(md-max) {
         position: relative;
         width: 100% !important;
         margin-bottom: 50px;
     }
+}
+
+.project:hover{
+    border-left: 5px solid $azul;    
 }
 
 .proyectoContain {
@@ -219,32 +233,32 @@
 }
 
 .caso1{
-    background-image: url('http://via.placeholder.com/400');
+    background-image: url('/img/Perritos Dobles.jpg');
     @extend .backgroundComplement;
     height: 200px;
 }
 .caso2{
-    background-image: url('http://via.placeholder.com/400');
+    background-image: url('/img/Pirata arriba de la casa.jpg');
     @extend .backgroundComplement;
     height: 200px;
 }
 .caso3{
-    background-image: url('http://via.placeholder.com/400');
+    background-image: url('/img/ramon.jpg');
     @extend .backgroundComplement;
     height: 200px;
 }
 .caso4{
-    background-image: url('http://via.placeholder.com/400');
+    background-image: url('/img/Oso 1.jpg');
     @extend .backgroundComplement;
     height: 200px;
 }
 .caso5{
-    background-image: url('http://via.placeholder.com/400');
+    background-image: url('/img/Lichacasa3.jpg');
     @extend .backgroundComplement;
     height: 200px;
 }
 .caso6{
-    background-image: url('http://via.placeholder.com/400');
+    background-image: url('/img/Lichacasa2.jpg');
     @extend .backgroundComplement;
     height: 200px;
 }

@@ -22,6 +22,12 @@ header {
         font-size: 15px;
         margin: 10px 10px 10px 10px;
     }
+    .dropdown-item:hover:before {
+        color: #e0d3ca;
+        font-size: 15px;
+        content: ">";
+        padding-right: 5px;
+    }
 }
 
 #slider {
@@ -40,18 +46,22 @@ header {
         }
         .titulo {
             position: absolute;
-            top: 100px;
+            top: 80px;
             right: 200px;
             font-size: 30px;
             width: 300px;
+            p{
+                font-size: 25px;                
+            }
             span {
                 color: $azul;
+                font-weight: bold;
             }
             button {
-                font-size: 20px;
+                font-size: 18px;
                 background-color: $azul;
                 color: $blanco;
-                padding: 8px 25px;
+                padding: 6px 15px;
                 border: 0;
                 border-radius: 5px;
                 letter-spacing: 1px;

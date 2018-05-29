@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*====Modo de uso
 	@include font-size($fontMenu);
 =================*/
@@ -48,7 +49,7 @@ p {
   font-size: 14px;
 }
 
-.transition, #misionVision .containerInfo:nth-child(1), #misionVision .containerInfo:nth-child(2), #queHacemos .gridcontainer .grid, #logros .btnInfo {
+.transition, #misionVision .containerInfo:nth-child(1), #misionVision .containerInfo:nth-child(2), #queHacemos .gridcontainer .grid, #logros .btnInfo, .project {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -63,6 +64,15 @@ p {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a8fe', endColorstr='#00bafe',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown-menu a {
+  font-size: 12px;
+  color: #c9c9c9;
 }
 
 header .fa-w-14,
@@ -98,6 +108,13 @@ header .nav-item {
   margin: 10px 10px 10px 10px;
 }
 
+header .dropdown-item:hover:before {
+  color: #e0d3ca;
+  font-size: 15px;
+  content: ">";
+  padding-right: 5px;
+}
+
 #slider .slide {
   height: 500px;
   width: 100%;
@@ -117,21 +134,26 @@ header .nav-item {
 
 #slider .slide .titulo {
   position: absolute;
-  top: 100px;
+  top: 80px;
   right: 200px;
   font-size: 30px;
   width: 300px;
 }
 
+#slider .slide .titulo p {
+  font-size: 25px;
+}
+
 #slider .slide .titulo span {
   color: #00b5fe;
+  font-weight: bold;
 }
 
 #slider .slide .titulo button {
-  font-size: 20px;
+  font-size: 18px;
   background-color: #00b5fe;
   color: #fff;
-  padding: 8px 25px;
+  padding: 6px 15px;
   border: 0;
   border-radius: 5px;
   letter-spacing: 1px;
@@ -554,6 +576,13 @@ footer svg {
 .rowLogros {
   background-color: #f6f6f6;
   padding: 50px;
+  padding-bottom: 0;
+}
+
+#frace2 img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
 }
 
 #logros {
@@ -577,6 +606,7 @@ footer svg {
   display: block;
   margin: 0 auto;
   padding-top: 50px;
+  width: 400px;
 }
 
 #logros .btnMasInfo1,
@@ -672,7 +702,6 @@ footer svg {
   max-width: unset;
   z-index: 2;
   padding: 20px 20px 20px 20px;
-  border-left: 5px solid #00b5fe;
   /*===============*/
   /*==============*/
   /*===Modo de uso===
@@ -686,6 +715,10 @@ footer svg {
     width: 100% !important;
     margin-bottom: 50px;
   }
+}
+
+.project:hover {
+  border-left: 5px solid #00b5fe;
 }
 
 .proyectoContain {
@@ -730,32 +763,32 @@ footer svg {
 }
 
 .caso1 {
-  background-image: url("http://via.placeholder.com/400");
+  background-image: url("/img/Perritos Dobles.jpg");
   height: 200px;
 }
 
 .caso2 {
-  background-image: url("http://via.placeholder.com/400");
+  background-image: url("/img/Pirata arriba de la casa.jpg");
   height: 200px;
 }
 
 .caso3 {
-  background-image: url("http://via.placeholder.com/400");
+  background-image: url("/img/ramon.jpg");
   height: 200px;
 }
 
 .caso4 {
-  background-image: url("http://via.placeholder.com/400");
+  background-image: url("/img/Oso 1.jpg");
   height: 200px;
 }
 
 .caso5 {
-  background-image: url("http://via.placeholder.com/400");
+  background-image: url("/img/Lichacasa3.jpg");
   height: 200px;
 }
 
 .caso6 {
-  background-image: url("http://via.placeholder.com/400");
+  background-image: url("/img/Lichacasa2.jpg");
   height: 200px;
 }
 
@@ -808,32 +841,32 @@ footer svg {
 }
 
 .apoyoImportante .foto1 {
-  background-image: url("http://via.placeholder.com/300x300");
+  background-image: url("/img/Cachorro coqueto.jpg");
   height: 400px;
 }
 
 .apoyoImportante .foto2 {
-  background-image: url("http://via.placeholder.com/300x300");
+  background-image: url("/img/Cachorro en círculo.jpg");
   height: 200px;
 }
 
 .apoyoImportante .foto3 {
-  background-image: url("http://via.placeholder.com/300x300");
+  background-image: url("/img/Carlota.jpg");
   height: 200px;
 }
 
 .apoyoImportante .foto4 {
-  background-image: url("http://via.placeholder.com/300x300");
+  background-image: url("/img/Clovis.jpg");
   height: 200px;
 }
 
 .apoyoImportante .foto5 {
-  background-image: url("http://via.placeholder.com/300x300");
+  background-image: url("/img/Hanna y chata.jpg");
   height: 200px;
 }
 
 .apoyoImportante .foto6 {
-  background-image: url("http://via.placeholder.com/300x300");
+  background-image: url("/img/Carlota cara.jpg");
   height: 200px;
 }
 
@@ -888,6 +921,14 @@ footer svg {
 }
 
 .containerForm .formPart2 button {
+  background-color: #00b5fe;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.formularioContacto button {
   background-color: #00b5fe;
   color: #fff;
   border: none;

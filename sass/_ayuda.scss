@@ -21,36 +21,36 @@
     }
 
     .foto1{
-        background-image: url('http://via.placeholder.com/300x300');
+        background-image: url('/img/Cachorro coqueto.jpg');
         @extend .backgroundComplement;
         height: 400px;        
     }
 
     .foto2{
-        background-image: url('http://via.placeholder.com/300x300');
+        background-image: url('/img/Cachorro en círculo.jpg');
         @extend .backgroundComplement;
         height: 200px;        
     }
 
     .foto3{
-        background-image: url('http://via.placeholder.com/300x300');
+        background-image: url('/img/Carlota.jpg');
         @extend .backgroundComplement;
         height: 200px;        
     }
 
     .foto4{
-        background-image: url('http://via.placeholder.com/300x300');
+        background-image: url('/img/Clovis.jpg');
         @extend .backgroundComplement;
         height: 200px;        
     }
 
     .foto5{
-        background-image: url('http://via.placeholder.com/300x300');
+        background-image: url('/img/Hanna y chata.jpg');
         @extend .backgroundComplement;
         height: 200px;        
     }
     .foto6{
-        background-image: url('http://via.placeholder.com/300x300');
+        background-image: url('/img/Carlota cara.jpg');
         @extend .backgroundComplement;
         height: 200px;        
     }
@@ -108,6 +108,16 @@
             border-radius: 5px;
             padding: 5px 10px;
         }
+    }
+}
+
+.formularioContacto{
+    button{
+        background-color: $azul;
+            color: $blanco;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
     }
 }
 

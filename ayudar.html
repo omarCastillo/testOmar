@@ -94,19 +94,22 @@
                     <div class="container containerForm">
                         <div class="col-sm-12">
                             <h2>¡ADOPTA!</h2>
-                            <p class="despliegaPregunta">¿Por qué adoptar?<span><i class="fas fa-angle-down"></i></span></p>
-                            <p class="despliegaPregunta">¿Estoy listo para adoptar?<span><i class="fas fa-angle-down"></i></span></p>
-                            <p class="despliegaPregunta">Quiero adoptar, ¿qué hago?<span><i class="fas fa-angle-down"></i></span></p>
+                            <p class="despliegaPregunta preg1">¿Por qué adoptar?<span><i class="fas fa-angle-down"></i></span></p>
+                                <p class="respuesta1" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore ducimus unde necessitatibus, molestias accusamus eos itaque nam et culpa? Unde delectus iure quasi. Minima quo harum aperiam necessitatibus at.</p>
+                            <p class="despliegaPregunta preg2">¿Estoy listo para adoptar?<span><i class="fas fa-angle-down"></i></span></p>
+                                <p class="respuesta2" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore ducimus unde necessitatibus, molestias accusamus eos itaque nam et culpa? Unde delectus iure quasi. Minima quo harum aperiam necessitatibus at.</p>                            
+                            <p class="despliegaPregunta preg3">Quiero adoptar, ¿qué hago?<span><i class="fas fa-angle-down"></i></span></p>
+                                <p class="respuesta3" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore ducimus unde necessitatibus, molestias accusamus eos itaque nam et culpa? Unde delectus iure quasi. Minima quo harum aperiam necessitatibus at.</p>                                                        
                             <div class="row">
                                 <div class="col-sm-10">
                                     <p>Deja tus datos y nos comunicamos contigo</p>
-                                    <form class="form-inline text-center formPart1">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Nombre">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Email">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="telefono">
+                                    <form action="server/send-form.php" class="form-inline text-center formPart1">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Nombre" name="nombre">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Email" name="email">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="telefono" name="telefono">
                                     </form>
                                     <form class="form-inline text-center formPart2">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Mensaje">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Mensaje" name="mensaje">
                                         <button type="submit">Enviar</button>
                                     </form>
                                 </div>
@@ -126,13 +129,13 @@
                             <p>Deja tus datos y nos comunicamos contigo</p>
                             <div class="row">
                                 <div class="col-sm-10">
-                                    <form class="form-inline text-center formPart1">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Nombre">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Email">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="telefono">
+                                    <form action="server/send-form.php" class="form-inline text-center formPart1">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Nombre" name="nombre">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Email" name="email">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="telefono" name="telefono">
                                     </form>
                                     <form class="form-inline text-center formPart2">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Mensaje">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Mensaje" name="mensaje">
                                         <button type="submit">Enviar</button>                                        
                                     </form>
                                 </div>
@@ -149,13 +152,13 @@
                             <p>¿Te gustaría organizar una actividad de voluntariado con nosotros?</p>
                             <div class="row">
                                 <div class="col-sm-10">
-                                    <form class="form-inline text-center formPart1">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Nombre">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Email">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="telefono">
+                                    <form action="server/send-form.php" class="form-inline text-center formPart1">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Nombre" name="nombre">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Email" name="email">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="telefono" name="telefono">
                                     </form>
                                     <form class="form-inline text-center formPart2">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Mensaje">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Mensaje" name="mensaje">
                                         <button type="submit">Enviar</button>                                        
                                     </form>
                                 </div>
@@ -169,10 +172,14 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <h2>DENUNCIAS</h2>
-                                <p class="despliegaPregunta">¿QUÉ DENUNCIAR? <span><i class="fas fa-angle-down"></i></span></p>
-                                <p class="despliegaPregunta">Si quires contar con más información <span><i class="fas fa-angle-down"></i></span></p>
-                                <p class="despliegaPregunta">¿CÓMO DENUNCIAR? <span><i class="fas fa-angle-down"></i></span></p>
-                                <p class="despliegaPregunta">¿DÓNDE DENUNCIAR? <span><i class="fas fa-angle-down"></i></span></p>
+                                <p class="despliegaPregunta preg4">¿QUÉ DENUNCIAR? <span><i class="fas fa-angle-down"></i></span></p>
+                                    <p class="respuesta4" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore ducimus unde necessitatibus, molestias accusamus eos itaque nam et culpa? Unde delectus iure quasi. Minima quo harum aperiam necessitatibus at.</p>                            
+                                <p class="despliegaPregunta preg5">Si quires contar con más información <span><i class="fas fa-angle-down"></i></span></p>
+                                    <p class="respuesta5" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore ducimus unde necessitatibus, molestias accusamus eos itaque nam et culpa? Unde delectus iure quasi. Minima quo harum aperiam necessitatibus at.</p>
+                                <p class="despliegaPregunta preg6">¿CÓMO DENUNCIAR? <span><i class="fas fa-angle-down"></i></span></p>
+                                    <p class="respuesta6" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore ducimus unde necessitatibus, molestias accusamus eos itaque nam et culpa? Unde delectus iure quasi. Minima quo harum aperiam necessitatibus at.</p>
+                                <p class="despliegaPregunta preg7">¿DÓNDE DENUNCIAR? <span><i class="fas fa-angle-down"></i></span></p>
+                                    <p class="respuesta7" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore ducimus unde necessitatibus, molestias accusamus eos itaque nam et culpa? Unde delectus iure quasi. Minima quo harum aperiam necessitatibus at.</p>
                                 <p>A continuación ofrecemos las ligas en caso de que desees realizar alguna denuncia:</p>
                                 <p>Ciudad de México<br>
                                     http://www.paot.org.mx/denunciantes/formularioDenuncia.php</p>
@@ -204,9 +211,9 @@
                 </div>
                 <div class="col-md-6 formularioContacto">
                     <h2>¡ESCRÍBENOS!</h2>
-                    <form action="" method="post">
+                    <form action="server/send-form.php" method="post">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="nombre" name="Nombre" placeholder="Nombre">
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
                             </div>
                             <div class="form-group">
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Email">
@@ -216,6 +223,9 @@
                             </div>
                             <div class="form-group">
                                 <textarea type="text" class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" rows="7"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" value="Enviar">Enviar</button>
                             </div>
                     </form>
                     <img src="img/gatoForm.png" alt="" srcset="">                    
@@ -243,6 +253,7 @@
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script src="js/preguntas.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
         $('#slider').slick({
