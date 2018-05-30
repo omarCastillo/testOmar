@@ -114,9 +114,15 @@
 #logros{
     background-color: $blanco;
     padding-top: 80px;
+    @include breakpoint(md-max){
+        padding-top: 0px;
+    }
     h2{
         padding: 50px 0 50px 0;
         color: $gris;
+        @include breakpoint(md-max){
+            padding: 5px 0 10px 0;
+        }
     }
     .containerInfoLogros{
         background-color: $blanco;
@@ -129,6 +135,9 @@
         margin: 0 auto;
         padding-top: 50px;
         width: 400px;
+        @include breakpoint(md-max) {
+            display: none;
+        }
     }
     .btnMasInfo1,
     .btnMasInfo2,
@@ -138,6 +147,9 @@
     .btnMasInfo6,
     .btnMasInfo7{
         display: none;
+        @media (max-width: 445px) {
+            display: block;
+        }
     }
     .info1:hover .btnMasInfo1,
     .info2:hover .btnMasInfo2,
