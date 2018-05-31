@@ -13,6 +13,7 @@ date_default_timezone_set("America/Mexico_City");
 	$phone=$_POST['numero'];
 	$message=$_POST['mensaje'];
 
+
 	$template = file_get_contents('mail.html');
 	$template = str_replace('%name%', $name, $template);
 	$template = str_replace('%email%', $email, $template);
@@ -30,7 +31,7 @@ date_default_timezone_set("America/Mexico_City");
 		$mail->Port = 587; // <---- Puerto del servidor del servicio de emails
 		$mail->SMTPSecure = 'tls'; // <---- Tipo de seguridad
 		$mail->From = 'omar.castillo.rosales@gmail.com'; // <---- Email del cliente
-		$mail->FromName = 'Nombre del cliente | Nuevo registro'; // <---- Cambiar el nombre del cliente
+		$mail->FromName = 'Nuevo registro de contacto'; // <---- Cambiar el nombre del cliente
 		$mail->addAddress('omar.castillo.rosales@gmail.com'); // <----- Email a donde llegaran los correos, si se quieren mas correos simplemente agregar otra linea como esta
 		$mail->isHTML(true);
 		$mail->CharSet = 'UTF-8';

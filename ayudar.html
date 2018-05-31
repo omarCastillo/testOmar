@@ -103,14 +103,14 @@
                             <div class="row">
                                 <div class="col-sm-10">
                                     <p>Deja tus datos y nos comunicamos contigo</p>
-                                    <form action="server/send-form.php" class="form-inline text-center formPart1">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Nombre" name="nombre">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Email" name="email">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="telefono" name="telefono">
-                                    </form>
-                                    <form class="form-inline text-center formPart2">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Mensaje" name="mensaje">
-                                        <button type="submit">Enviar</button>
+                                    <form action="server/send-formAdopcion.php" class="form-inline text-center formPart1" method="post">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="nombre" name="nombre">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="email" name="email">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="telefono" name="telefono">                                
+                                        <div class="form-inline text-center formPart2">
+                                            <input type="text" class="form-control" id="inlineFormInput" placeholder="mensaje" name="mensaje">
+                                            <button type="submit">Enviar</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
@@ -129,16 +129,16 @@
                             <p>Deja tus datos y nos comunicamos contigo</p>
                             <div class="row">
                                 <div class="col-sm-10">
-                                    <form action="server/send-form.php" class="form-inline text-center formPart1">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Nombre" name="nombre">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Email" name="email">
+                                    <form action="server/send-formVoluntario.php" class="form-inline text-center formPart1" method="post">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="nombre" name="nombre">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="email" name="email">
                                         <input type="text" class="form-control" id="inlineFormInput" placeholder="telefono" name="telefono">
+                                        <div class="form-inline text-center formPart2">
+                                            <input type="text" class="form-control" id="inlineFormInput" placeholder="mensaje" name="mensaje">
+                                            <button type="submit">Enviar</button>                                        
+                                        </div>
                                     </form>
-                                    <form class="form-inline text-center formPart2">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Mensaje" name="mensaje">
-                                        <button type="submit">Enviar</button>                                        
-                                    </form>
-                                </div>
+                                </form>
                             </div>
                             <h4>Voluntariado Corporativo.</h4>
                             <p>¿Porqué es importante?</p>
@@ -152,14 +152,14 @@
                             <p>¿Te gustaría organizar una actividad de voluntariado con nosotros?</p>
                             <div class="row">
                                 <div class="col-sm-10">
-                                    <form action="server/send-form.php" class="form-inline text-center formPart1">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Nombre" name="nombre">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Email" name="email">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="telefono" name="telefono">
-                                    </form>
-                                    <form class="form-inline text-center formPart2">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Mensaje" name="mensaje">
+                                    <form action="server/send-formVoluntarioCorporativo.php" class="form-inline text-center formPart1" method="post">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="nombre" name="nombre">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="email" name="email">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="telefono" name="telefono">                                    
+                                    <div class="form-inline text-center formPart2">
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="mensaje" name="mensaje">
                                         <button type="submit">Enviar</button>                                        
+                                    </div>
                                     </form>
                                 </div>
                             </div>
@@ -211,14 +211,14 @@
                 </div>
                 <div class="col-md-6 formularioContacto">
                     <h2>¡ESCRÍBENOS!</h2>
-                    <form action="server/send-form.php" method="post">
+                    <form action="server/send-formContacto.php" method="post">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
-                            </div>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre">
+                            </email>
                             <div class="form-group">
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                             </div>
-                            <div class="form-group">
+                            <div mensaje="form-group">
                                 <input type="number" class="form-control" id="numero" name="numero" placeholder="Numero">
                             </div>
                             <div class="form-group">

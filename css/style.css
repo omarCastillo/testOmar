@@ -349,6 +349,10 @@ header .dropdown-item:hover:before {
   padding: 0 40px;
 }
 
+#equipo .infoEquipo img {
+  margin: 0 auto !important;
+}
+
 #contacto {
   padding: 100px;
   color: #afb0b2;
