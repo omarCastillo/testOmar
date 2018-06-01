@@ -28,6 +28,10 @@ header {
         content: ">";
         padding-right: 5px;
     }
+
+    .navbar-light .navbar-nav .active>.nav-link{
+        font-weight: 600;
+    }
 }
 
 .navbar-toggler{
