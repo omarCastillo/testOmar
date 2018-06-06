@@ -75,6 +75,10 @@ p {
   color: #c9c9c9;
 }
 
+.modal-dialog {
+  max-width: 70%;
+}
+
 header .fa-w-14,
 header .fa-w-16 {
   color: #00b5fe;
@@ -113,6 +117,10 @@ header .dropdown-item:hover:before {
   font-size: 15px;
   content: ">";
   padding-right: 5px;
+}
+
+header .navbar-light .navbar-nav .active > .nav-link {
+  font-weight: 600;
 }
 
 .navbar-toggler {
@@ -298,6 +306,7 @@ header .dropdown-item:hover:before {
   position: absolute;
   top: -50px;
   right: -50px;
+  width: 150px;
   /*===============*/
   /*==============*/
   /*===Modo de uso===

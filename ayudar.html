@@ -51,9 +51,9 @@
                     </li>
                     <span class="navbar-text">
                         <p>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-facebook"></i>
-                            <i class="fab fa-twitter"></i>
+                            <a href="https://www.instagram.com/defensoria_animal/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/defensoriaanimalmx/"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/DefAnimalMX?lang=es"><i class="fab fa-twitter"></i></a>
                         </p>
                     </span>
                 </ul>
@@ -68,7 +68,7 @@
                         <h2>¡Tu apoyo es muy importante!</h2>
                         <h3>¡CADA PESO CUENTA!</h3>
                         <div class="foto1"></div>
-                        <label class="text-left">DONAR</label>
+                        <!-- <label class="text-left">DONAR</label> -->
                     </div>
                     <div class="col-lg-6">
                         <div class="container-fluid">
@@ -200,7 +200,6 @@
                                 </form>
                             </div>
                             <h4>Voluntariado Corporativo.</h4>
-                            <p>¿Porqué es importante?</p>
                             <ul>
                                 <li>Mejora y fortalice la comunicación interna.</li>
                                 <li>Involucra e implica a los colaboradores de una empresa en la acción y la responsabilidad social.</li>
@@ -211,14 +210,14 @@
                             <p>¿Te gustaría organizar una actividad de voluntariado con nosotros?</p>
                             <div class="row">
                                 <div class="col-sm-10">
-                                    <form action="server/send-formVoluntarioCorporativo.php" class="form-inline text-center formPart1" method="post">
+                                    <form action="server/send-formVoluntario.php" class="form-inline text-center formPart1" method="post">
                                         <input type="text" class="form-control" id="inlineFormInput" placeholder="nombre" name="nombre">
                                         <input type="text" class="form-control" id="inlineFormInput" placeholder="email" name="email">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="telefono" name="telefono">                                    
-                                    <div class="form-inline text-center formPart2">
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="mensaje" name="mensaje">
-                                        <button type="submit">Enviar</button>                                        
-                                    </div>
+                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="telefono" name="telefono">
+                                        <div class="form-inline text-center formPart2">
+                                            <input type="text" class="form-control" id="inlineFormInput" placeholder="mensaje" name="mensaje">
+                                            <button type="submit">Enviar</button>                                        
+                                        </div>
                                     </form>
                                 </div>
                             </div>
@@ -266,27 +265,27 @@
                 <div class="col-md-3">
                     <h2>CONTACTO</h2>
                     <p>Teléfonos de Contacto:</p>
-                    <p><a href="">045 (722) 380 6996</a></p>
-                    <p><a href="">044 (55) 52 99 5387</a></p>
+                    <p><a href="tel:045 (722) 380 6996"><i class="fas fa-phone"></i> 045 (722) 380 6996</a></p>
+                    <p><a href="tel:044 (55) 52 99 5387"><i class="fas fa-phone"></i> 044 (55) 52 99 5387</a></p>
                 </div>
                 <div class="col-md-6 formularioContacto">
                     <h2>¡ESCRÍBENOS!</h2>
                     <form action="server/send-formContacto.php" method="post">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre">
-                            </email>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-                            </div>
-                            <div mensaje="form-group">
-                                <input type="number" class="form-control" id="numero" name="numero" placeholder="Numero">
-                            </div>
-                            <div class="form-group">
-                                <textarea type="text" class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" rows="7"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" value="Enviar">Enviar</button>
-                            </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="numero" name="numero" placeholder="Numero">
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" rows="7"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" value="Enviar">Enviar</button>
+                        </div>
                     </form>
                     <img src="img/gatoForm.png" alt="" srcset="">                    
                 </div>
@@ -297,14 +296,14 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-3 logo">
-                    <img src="img/imagotipoBlanco.png" class="img-fluid">                    
+                    <img src="img/imagotipoBlanco2.png" class="img-fluid">                    
                 </div>
                 <div class="col-md-6 texto">
                     <p>DEFENSORÍA ANIMAL © TODOS LOS DERECHOS RESERVADOS<br>
                            <p data-toggle="modal" data-target="#exampleModalLong">Política de privacidad</p>
                 </div>
                 <div class="col-md-3 socialNetwork">
-                    <p><i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i></p>
+                    <p><a href="https://www.instagram.com/defensoria_animal/?hl=es-la"><i class="fab fa-instagram"></i></a> <a href="https://www.facebook.com/defensoriaanimalmx/"><i class="fab fa-facebook"></i></a> <a href="https://twitter.com/DefAnimalMX?lang=es"><i class="fab fa-twitter"></i></a></p>
                 </div>
             </div>
         </div>

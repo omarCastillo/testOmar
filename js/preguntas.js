@@ -31,3 +31,27 @@ $( ".preg10" ).click(function() {
 $( ".preg11" ).click(function() {
     $( ".respuesta11" ).toggle( "slow" );
 });
+
+// fraces equipo
+
+$( ".despliegaFrace1" ).click(function() {
+    $( ".frace1" ).toggle( "slow" );
+});
+$( ".despliegaFrace2" ).click(function() {
+    $( ".frace2" ).toggle( "slow" );
+});
+$( ".despliegaFrace3" ).click(function() {
+    $( ".frace3" ).toggle( "slow" );
+});
+$( ".despliegaFrace4" ).click(function() {
+    $( ".frace4" ).toggle( "slow" );
+});
+$( ".despliegaFrace5" ).click(function() {
+    $( ".frace5" ).toggle( "slow" );
+});
+$( ".despliegaFrace6" ).click(function() {
+    $( ".frace6" ).toggle( "slow" );
+});
+$( ".despliegaFrace7" ).click(function() {
+    $( ".frace7" ).toggle( "slow" );
+});
